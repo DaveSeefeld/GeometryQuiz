@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Geometry Quiz</string>
+    <string name="title_text">Geometry Quiz</string>
+    <string name="app_description">This is a geometry quiz!</string>
+
+    <string name="img_bg_desc">Geometry background image</string>
+    <string name="img_polygon_desc">Polygon, solve for x.</string>
+
+    <string name="edittext_name_prompt">Enter your name here</string>
+    <string name="edittext_x_prompt">What is the value of x?</string>
+
+    <string name="q1_question">Question 1: Two triangles with equal sides are considered _____________.</string>
+    <string name="q1_response_1">Similar</string>
+    <string name="q1_response_2">Congruent</string>
+    <string name="q1_response_3">Isosceles</string>
+
+    <string name="q2_question">Question 2: A rhombus has ___________. Check all that apply.</string>
+    <string name="q2_response_1">All equal sides</string>
+    <string name="q2_response_2">All unequal sides</string>
+    <string name="q2_response_3">All equal angles</string>
+    <string name="q2_response_4">Opposite equal angles</string>
+
+    <string name="q3_question">Question 3: Based on the image below, what is the value of x?</string>
+
+    <string name="q4_question">Question 4: A polygon with five sides is called a ____________.</string>
+    <string name="q4_response_1">Pentagon</string>
+    <string name="q4_response_2">Hexagon</string>
+    <string name="q4_response_3">Trapezoid</string>
+
+    <string name="q5_question">Question 5: Which of the following are polygons? Check all that apply.</string>
+    <string name="q5_response_1">Circle</string>
+    <string name="q5_response_2">Triangle</string>
+    <string name="q5_response_3">Nonagon</string>
+    <string name="q5_response_4">Quadrilateral</string>
+
+    <string name="q6_question">Question 6: Based on the image below, what is the value of x?</string>
+
+    <string name="score_quiz">Score Quiz</string>
+    <string name="view_results">Your results:</string>
+
+</resources>
