@@ -10,4 +10,56 @@
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
     </style>
+
+    <!-- Custom Rounded Rectangle Theme -->
+    <style name="customRoundedRectangle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_medium</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/layout_translucent_bg</item>
+    </style>
+
+    <!-- Custom Edit Text Theme -->
+    <style name="customEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textSize">@dimen/text_medium_size</item>
+    </style>
+
+    <!-- Custom Display Text Theme -->
+    <style name="customDisplayText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_medium</item>
+        <item name="android:textSize">@dimen/text_medium_size</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+
+    <!-- Custom Divider Theme -->
+    <style name="customDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/separator_height</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_medium</item>
+        <item name="android:background">@color/colorDivider</item>
+    </style>
+
+    <!-- Custom Score Button -->
+    <style name="customScoreButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textSize">@dimen/text_medium_size</item>
+    </style>
+
+    <!-- Custom Image Question Theme -->
+    <style name="customImageQuestion">
+        <item name="android:layout_width">@dimen/image_question_size</item>
+        <item name="android:layout_height">@dimen/image_question_size</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
 </resources>

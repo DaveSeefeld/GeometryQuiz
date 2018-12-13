@@ -25,8 +25,6 @@ public class MainActivity extends AppCompatActivity {
      */
     public void submitQuizResults(View view) {
 
-        String resultsMessage = "";
-
         EditText nameEditText = (EditText) findViewById(R.id.edittext_name);
         String studentName = nameEditText.getText().toString();
 
@@ -34,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
 
         int score = scoreQ1() + scoreQ2() + scoreQ3() + scoreQ4() + scoreQ5() + scoreQ6();
 
-        resultsMessage = studentName + ", you got " + score + " out of 6 questions correct.";
-        Toast.makeText(getApplicationContext(), studentName + ", you got " + score + " out of 6 questions correct.", Toast.LENGTH_SHORT).show();
+        String resultsMessage = getString(R.string.results_scored, studentName, score);
+        Toast.makeText(getApplicationContext(), getString(R.string.results_scored, studentName, score), Toast.LENGTH_SHORT).show();
 
         resultsEditText.setText(resultsMessage);
         LinearLayout linearLayout = (LinearLayout) findViewById(R.id.results_layout);
@@ -64,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
     private int scoreQ3() {
         EditText editText = (EditText) findViewById(R.id.q3_answer);
-        if (editText.getText().toString().equals("163"))
+        if (editText.getText().toString().equals(getString(R.string.q3_andwer)))
             return 1;
         else
             return 0;
@@ -91,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
     private int scoreQ6() {
         EditText editText = (EditText) findViewById(R.id.q6_answer);
-        if (editText.getText().toString().equals("168"))
+        if (editText.getText().toString().equals(getString(R.string.q6_answer)))
             return 1;
         else
             return 0;

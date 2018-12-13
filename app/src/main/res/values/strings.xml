@@ -21,6 +21,7 @@
     <string name="q2_response_4">Opposite equal angles</string>
 
     <string name="q3_question">Question 3: Based on the image below, what is the value of x?</string>
+    <string name="q3_andwer">163</string>
 
     <string name="q4_question">Question 4: A polygon with five sides is called a ____________.</string>
     <string name="q4_response_1">Pentagon</string>
@@ -34,8 +35,10 @@
     <string name="q5_response_4">Quadrilateral</string>
 
     <string name="q6_question">Question 6: Based on the image below, what is the value of x?</string>
+    <string name="q6_answer">168</string>
 
     <string name="score_quiz">Score Quiz</string>
     <string name="view_results">Your results:</string>
+    <string name="results_scored">%1$s, you got %2$d out of 6 questions correct.</string>
 
 </resources>

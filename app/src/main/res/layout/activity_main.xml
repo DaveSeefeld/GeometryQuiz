@@ -8,7 +8,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="@string/img_polygon_desc"
+        android:contentDescription="@string/img_bg_desc"
         android:scaleType="centerCrop"
         android:src="@drawable/gq_background" />
 
@@ -22,12 +22,7 @@
             android:layout_margin="@dimen/spacing_medium"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/spacing_medium"
-                android:background="@drawable/layout_translucent_bg"
-                android:orientation="vertical">
+            <LinearLayout style="@style/customRoundedRectangle">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -39,190 +34,103 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/spacing_medium"
-                android:background="@drawable/layout_translucent_bg"
-                android:orientation="vertical">
-
+            <LinearLayout style="@style/customRoundedRectangle">
 
                 <EditText
                     android:id="@+id/edittext_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    style="@style/customEditText"
                     android:hint="@string/edittext_name_prompt"
-                    android:inputType="textPersonName"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/text_medium_size" />
+                    android:inputType="textPersonName" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/spacing_medium"
-                android:background="@drawable/layout_translucent_bg"
-                android:orientation="vertical">
+            <LinearLayout style="@style/customRoundedRectangle">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:text="@string/q1_question"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/text_medium_size" />
+                    style="@style/customDisplayText"
+                    android:text="@string/q1_question" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_height"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:background="@color/colorDivider" />
+                <View style="@style/customDivider" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/spacing_medium"
-                        android:text="@string/q1_response_1"
-                        android:textSize="@dimen/text_medium_size" />
+                        style="@style/customDisplayText"
+                        android:text="@string/q1_response_1" />
 
                     <RadioButton
                         android:id="@+id/q1_answer"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/spacing_medium"
-                        android:text="@string/q1_response_2"
-                        android:textSize="@dimen/text_medium_size" />
+                        style="@style/customDisplayText"
+                        android:text="@string/q1_response_2" />
 
                     <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q1_response_3"
-                        android:textSize="@dimen/text_medium_size" />
+                        style="@style/customDisplayText"
+                        android:text="@string/q1_response_3" />
 
                 </RadioGroup>
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/spacing_medium"
-                android:background="@drawable/layout_translucent_bg"
-                android:orientation="vertical">
+            <LinearLayout style="@style/customRoundedRectangle">
 
                 <TextView
-                    android:layout_width="match_parent"
+                    style="@style/customDisplayText"
+                    android:text="@string/q2_question" />
 
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:text="@string/q2_question"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/text_medium_size" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_height"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:background="@color/colorDivider" />
+                <View style="@style/customDivider" />
 
                 <CheckBox
                     android:id="@+id/q2_answer_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:text="@string/q2_response_1"
-                    android:textSize="@dimen/text_medium_size" />
+                    style="@style/customDisplayText"
+                    android:text="@string/q2_response_1" />
 
                 <CheckBox
                     android:id="@+id/q2_answer_2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:text="@string/q2_response_2"
-                    android:textSize="@dimen/text_medium_size" />
+                    style="@style/customDisplayText"
+                    android:text="@string/q2_response_2" />
 
                 <CheckBox
                     android:id="@+id/q2_answer_3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:text="@string/q2_response_3"
-                    android:textSize="@dimen/text_medium_size" />
+                    style="@style/customDisplayText"
+                    android:text="@string/q2_response_3" />
 
                 <CheckBox
                     android:id="@+id/q2_answer_4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:text="@string/q2_response_4"
-                    android:textSize="@dimen/text_medium_size" />
+                    style="@style/customDisplayText"
+                    android:text="@string/q2_response_4" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/spacing_medium"
-                android:background="@drawable/layout_translucent_bg"
-                android:orientation="vertical">
+            <LinearLayout style="@style/customRoundedRectangle">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:text="@string/q3_question"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/text_medium_size" />
+                    style="@style/customDisplayText"
+                    android:text="@string/q3_question" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_height"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:background="@color/colorDivider" />
+                <View style="@style/customDivider" />
 
                 <EditText
                     android:id="@+id/q3_answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/customEditText"
                     android:hint="@string/edittext_x_prompt"
-                    android:inputType="number"
-                    android:textSize="@dimen/text_medium_size" />
+                    android:inputType="number" />
 
                 <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_gravity="center"
+                    style="@style/customImageQuestion"
                     android:contentDescription="@string/img_polygon_desc"
-                    android:scaleType="fitCenter"
                     android:src="@drawable/polygon_1" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/spacing_medium"
-                android:background="@drawable/layout_translucent_bg"
-                android:orientation="vertical">
+            <LinearLayout style="@style/customRoundedRectangle">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:text="@string/q4_question"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/text_medium_size" />
+                    style="@style/customDisplayText"
+                    android:text="@string/q4_question" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_height"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:background="@color/colorDivider" />
+                <View style="@style/customDivider" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
@@ -230,181 +138,101 @@
 
                     <RadioButton
                         android:id="@+id/q4_answer"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/spacing_medium"
-                        android:text="@string/q4_response_1"
-                        android:textSize="@dimen/text_medium_size" />
+                        style="@style/customDisplayText"
+                        android:text="@string/q4_response_1" />
 
                     <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/spacing_medium"
-                        android:text="@string/q4_response_2"
-                        android:textSize="@dimen/text_medium_size" />
+                        style="@style/customDisplayText"
+                        android:text="@string/q4_response_2" />
 
                     <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/spacing_medium"
-                        android:text="@string/q4_response_3"
-                        android:textSize="@dimen/text_medium_size" />
+                        style="@style/customDisplayText"
+                        android:text="@string/q4_response_3" />
 
                 </RadioGroup>
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/spacing_medium"
-                android:background="@drawable/layout_translucent_bg"
-                android:orientation="vertical">
+            <LinearLayout style="@style/customRoundedRectangle">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:text="@string/q5_question"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/text_medium_size" />
+                    style="@style/customDisplayText"
+                    android:text="@string/q5_question" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_height"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:background="@color/colorDivider" />
+                <View style="@style/customDivider" />
 
                 <CheckBox
                     android:id="@+id/q5_answer_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:text="@string/q5_response_1"
-                    android:textSize="@dimen/text_medium_size" />
+                    style="@style/customDisplayText"
+                    android:text="@string/q5_response_1" />
 
                 <CheckBox
                     android:id="@+id/q5_answer_2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:text="@string/q5_response_2"
-                    android:textSize="@dimen/text_medium_size" />
+                    style="@style/customDisplayText"
+                    android:text="@string/q5_response_2" />
 
                 <CheckBox
                     android:id="@+id/q5_answer_3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:text="@string/q5_response_3"
-                    android:textSize="@dimen/text_medium_size" />
+                    style="@style/customDisplayText"
+                    android:text="@string/q5_response_3" />
 
                 <CheckBox
                     android:id="@+id/q5_answer_4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:text="@string/q5_response_4"
-                    android:textSize="@dimen/text_medium_size" />
+                    style="@style/customDisplayText"
+                    android:text="@string/q5_response_4" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/spacing_medium"
-                android:background="@drawable/layout_translucent_bg"
-                android:orientation="vertical">
+            <LinearLayout style="@style/customRoundedRectangle">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:text="@string/q6_question"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/text_medium_size" />
+                    style="@style/customDisplayText"
+                    android:text="@string/q6_question" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_height"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:background="@color/colorDivider" />
+                <View style="@style/customDivider" />
 
                 <EditText
                     android:id="@+id/q6_answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/customEditText"
                     android:hint="@string/edittext_x_prompt"
-                    android:inputType="number"
-                    android:textSize="@dimen/text_medium_size" />
+                    android:inputType="number" />
 
                 <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_gravity="center"
+                    style="@style/customImageQuestion"
                     android:contentDescription="@string/img_polygon_desc"
-                    android:scaleType="fitCenter"
                     android:src="@drawable/polygon_2" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/spacing_medium"
-                android:background="@drawable/layout_translucent_bg"
-                android:orientation="vertical">
+            <LinearLayout style="@style/customRoundedRectangle">
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    style="@style/customScoreButton"
                     android:onClick="submitQuizResults"
-                    android:text="@string/score_quiz"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/text_medium_size" />
+                    android:text="@string/score_quiz" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/results_layout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/spacing_medium"
-                android:background="@drawable/layout_translucent_bg"
-                android:orientation="vertical"
+                style="@style/customRoundedRectangle"
                 android:visibility="invisible">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:text="@string/view_results"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/text_medium_size" />
+                    style="@style/customDisplayText"
+                    android:text="@string/view_results" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_height"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:background="@color/colorDivider" />
+                <View style="@style/customDivider" />
 
                 <TextView
                     android:id="@+id/textview_quiz_results"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/spacing_medium"
-                    android:text=""
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/text_medium_size" />
+                    style="@style/customDisplayText"
+                    android:text="" />
 
             </LinearLayout>
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/separator_height"
-                android:layout_marginBottom="@dimen/spacing_medium"
-                android:background="@color/colorDivider"
+                style="@style/customDivider"
                 android:visibility="invisible" />
 
         </LinearLayout>
